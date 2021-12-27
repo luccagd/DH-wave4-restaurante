@@ -21,10 +21,10 @@ public class PratoController {
 	private PratoService pratoService;
 	
 	@PostMapping
-	public ResponseEntity<Prato> cadastrar(@RequestBody PratoDTO prato)
+	public ResponseEntity<PratoDTO> cadastrar(@RequestBody PratoDTO pratoDTO)
 	{
-		Prato p = pratoService.cadastra(PratoDTO.toEntity(prato));
-		return new ResponseEntity<Prato>(p, HttpStatus.CREATED);
+		Prato p = pratoService.cadastra(PratoDTO.toEntity(pratoDTO));
+		return new ResponseEntity<PratoDTO>(PratoDTO.toDTO(p), HttpStatus.CREATED);
 	}
 
 }

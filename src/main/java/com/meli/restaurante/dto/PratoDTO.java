@@ -7,11 +7,12 @@ import com.meli.restaurante.model.Prato;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+@Setter
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-
 public class PratoDTO {
 
 	private BigDecimal preco;
@@ -26,4 +27,15 @@ public class PratoDTO {
 		
 		return p;
 	}
+
+	public static PratoDTO toDTO(Prato prato) {
+		PratoDTO dto = new PratoDTO();
+		dto.setDescricao(prato.getDescricao());
+		dto.setPreco(prato.getPreco());
+		dto.setQuantidade(prato.getQuantidade());
+
+		return dto;
+	}
+
+
 }
