@@ -1,9 +1,9 @@
-package com.meli.restaurante.services;
+package com.meli.restaurante.service;
 
+import com.meli.restaurante.model.Prato;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.meli.restaurante.entities.Prato;
 import com.meli.restaurante.repository.PratoRepository;
 
 @Service

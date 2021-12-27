@@ -1,9 +1,9 @@
-package com.meli.restaurante.dtos;
+package com.meli.restaurante.dto;
 
 import java.math.BigDecimal;
 
-import com.meli.restaurante.entities.Prato;
-
+import com.meli.restaurante.model.Mesa;
+import com.meli.restaurante.model.Prato;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
