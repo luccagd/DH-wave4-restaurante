@@ -14,4 +14,8 @@ public class MesaService {
     public Mesa findById(Integer id) {
         return repository.findById(id);
     }
+
+    public void criarMesa() {
+        repository.criarMesa();
+    }
 }

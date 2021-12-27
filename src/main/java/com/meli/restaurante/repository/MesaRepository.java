@@ -20,4 +20,8 @@ public class MesaRepository {
 
         return null;
     }
+
+    public void criarMesa() {
+        mesas.add(new Mesa());
+    }
 }

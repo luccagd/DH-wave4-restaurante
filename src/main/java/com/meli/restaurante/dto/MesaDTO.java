@@ -16,6 +16,14 @@ public class MesaDTO {
         this.valorTotalConsumido = valorTotalConsumido;
     }
 
+    public List<Pedido> getPedidos() {
+        return pedidos;
+    }
+
+    public BigDecimal getValorTotalConsumido() {
+        return valorTotalConsumido;
+    }
+
     public static MesaDTO toDTO(Mesa mesa) {
         return new MesaDTO(mesa.getPedidos(), mesa.getValorTotalConsumido());
     }
